@@ -1,21 +1,17 @@
-# Put title of your app here
+# Puppy Adoption App
 
-<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
-<!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
+![Workflow result](https://github.com/vishistv/Puppy-adoption-app/workflows/Check/badge.svg)
 
 
 ## :scroll: Description
-<!--- Describe your app in one or two sentences -->
+A Puppy Adoption App that let's you see pups that are looking for a home. 
 
 
 ## :bulb: Motivation and Context
-<!--- Optionally point readers to interesting parts of your submission. -->
-<!--- What are you especially proud of? -->
+Even though the app seems pretty basic, I'm proud to have implemented the entire app using Jetpack Compose.
 
 
 ## :camera_flash: Screenshots
-<!-- You can add more screenshots here if you like -->
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
 ## License
