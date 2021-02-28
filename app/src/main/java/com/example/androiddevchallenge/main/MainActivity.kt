@@ -66,48 +66,55 @@ fun LazyColumnItemsScrollableComponent(puppyList: List<Puppy>) {
     val context = LocalContext.current
 
     LazyColumn(modifier = Modifier.fillMaxHeight()) {
-        items(items = puppyList, itemContent = { puppy ->
-            val index = puppyList.indexOf(puppy)
-            Card(
-                shape = RoundedCornerShape(8.dp),
-                backgroundColor = Color.White,
-                modifier = Modifier
-                    .fillParentMaxWidth()
-                    .padding(12.dp)
-                    .clickable {
-                        val intent = Intent(context, DetailActivity::class.java)
-                        intent.putExtra("index", index)
-                        context.startActivity(intent)
+        items(
+            items = puppyList,
+            itemContent = { puppy ->
+                val index = puppyList.indexOf(puppy)
+                Card(
+                    shape = RoundedCornerShape(8.dp),
+                    backgroundColor = Color.White,
+                    modifier = Modifier
+                        .fillParentMaxWidth()
+                        .padding(12.dp)
+                        .clickable {
+                            val intent = Intent(context, DetailActivity::class.java)
+                            intent.putExtra("index", index)
+                            context.startActivity(intent)
+                        }
+                ) {
+                    Column {
+                        Image(
+                            painter = painterResource(puppy.dogImage),
+                            contentDescription = null,
+                            modifier = Modifier
+                                .height(180.dp)
+                                .fillMaxWidth(),
+                            contentScale = ContentScale.Crop
+                        )
+
+                        Text(
+                            puppy.name,
+                            style = TextStyle(
+                                color = Color.Black,
+                                fontSize = 16.sp,
+                                textAlign = TextAlign.Center
+                            ),
+                            modifier = Modifier.padding(16.dp, 8.dp, 0.dp, 0.dp)
+                        )
+
+                        Text(
+                            puppy.breed,
+                            style = TextStyle(
+                                color = Color.Gray,
+                                fontSize = 12.sp,
+                                textAlign = TextAlign.Center
+                            ),
+                            modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 16.dp)
+                        )
                     }
-            ) {
-                Column {
-                    Image(
-                        painter = painterResource(puppy.dogImage),
-                        contentDescription = null,
-                        modifier = Modifier
-                            .height(180.dp)
-                            .fillMaxWidth(),
-                        contentScale = ContentScale.Crop
-                    )
-
-                    Text(
-                        puppy.name, style = TextStyle(
-                        color = Color.Black,
-                        fontSize = 16.sp,
-                        textAlign = TextAlign.Center
-                    ), modifier = Modifier.padding(16.dp, 8.dp, 0.dp, 0.dp)
-                    )
-
-                    Text(
-                        puppy.breed, style = TextStyle(
-                        color = Color.Gray,
-                        fontSize = 12.sp,
-                        textAlign = TextAlign.Center
-                    ), modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 16.dp)
-                    )
                 }
             }
-        })
+        )
     }
 }
 

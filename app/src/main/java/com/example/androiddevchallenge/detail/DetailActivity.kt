@@ -63,76 +63,88 @@ fun PuppyDetails(puppy: Puppy) {
 
         Row(modifier = Modifier.padding(16.dp, 8.dp, 0.dp, 8.dp)) {
             Text(
-                "Name: ", style = TextStyle(
-                color = Color.Black,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
+                "Name: ",
+                style = TextStyle(
+                    color = Color.Black,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
             )
 
             Text(
-                puppy.name, style = TextStyle(
-                color = Color.Black,
-                fontSize = 16.sp,
-            ), modifier = Modifier.padding(8.dp, 0.dp, 0.dp, 0.dp)
+                puppy.name,
+                style = TextStyle(
+                    color = Color.Black,
+                    fontSize = 16.sp,
+                ),
+                modifier = Modifier.padding(8.dp, 0.dp, 0.dp, 0.dp)
             )
         }
 
         Row(modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 8.dp)) {
             Text(
-                "Breed: ", style = TextStyle(
-                color = Color.Gray,
-                fontSize = 12.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
+                "Breed: ",
+                style = TextStyle(
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
             )
 
             Text(
-                puppy.breed, style = TextStyle(
-                color = Color.Gray,
-                fontSize = 12.sp,
-                textAlign = TextAlign.Center
-            ), modifier = Modifier.padding(8.dp, 0.dp, 0.dp, 0.dp)
+                puppy.breed,
+                style = TextStyle(
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    textAlign = TextAlign.Center
+                ),
+                modifier = Modifier.padding(8.dp, 0.dp, 0.dp, 0.dp)
             )
         }
 
         Row(modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 8.dp)) {
             Text(
-                "Age: ", style = TextStyle(
-                color = Color.Gray,
-                fontSize = 12.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
+                "Age: ",
+                style = TextStyle(
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
             )
 
             Text(
-                puppy.age, style = TextStyle(
-                color = Color.Gray,
-                fontSize = 12.sp,
-                textAlign = TextAlign.Center
-            ), modifier = Modifier.padding(8.dp, 0.dp, 0.dp, 0.dp)
+                puppy.age,
+                style = TextStyle(
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    textAlign = TextAlign.Center
+                ),
+                modifier = Modifier.padding(8.dp, 0.dp, 0.dp, 0.dp)
             )
         }
 
         Row(modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 8.dp)) {
             Text(
-                "Description: ", style = TextStyle(
-                color = Color.Gray,
-                fontSize = 12.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
+                "Description: ",
+                style = TextStyle(
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
             )
 
             Text(
-                getDescription(), style = TextStyle(
-                color = Color.Gray,
-                fontSize = 12.sp,
-                textAlign = TextAlign.Justify
-            ), modifier = Modifier.padding(8.dp, 0.dp, 16.dp, 0.dp)
+                getDescription(),
+                style = TextStyle(
+                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    textAlign = TextAlign.Justify
+                ),
+                modifier = Modifier.padding(8.dp, 0.dp, 16.dp, 0.dp)
             )
         }
     }
