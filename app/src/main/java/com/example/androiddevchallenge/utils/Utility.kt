@@ -2,7 +2,6 @@ package com.example.androiddevchallenge.utils
 
 import com.example.androiddevchallenge.R
 
-
 fun getPuppyList() = listOf(
     Puppy(
         "Tic",
@@ -40,7 +39,8 @@ fun getPuppyList() = listOf(
         "Doberman",
         R.drawable.rufus
     ),
-    Puppy("Rusty",
+    Puppy(
+        "Rusty",
         "5 years",
         "Great Dane",
         R.drawable.rusty
@@ -67,7 +67,8 @@ fun getPuppyList() = listOf(
 
 fun getPuppyByIndex(index: Int) = getPuppyList()[index]
 
-fun getDescription() = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare velit non mauris elementum, at luctus libero pulvinar. Mauris ac sapien lacus. Nam posuere consectetur mattis. Donec imperdiet, sem lacinia congue ultrices, ligula turpis sodales urna, eget feugiat tortor lacus et est. Phasellus sit amet ultricies odio. Maecenas finibus lorem sit amet orci euismod tempus. Maecenas ornare augue vel sem fermentum vestibulum. Quisque efficitur velit non erat commodo dapibus. Pellentesque ac leo id est volutpat posuere eget non urna. Nulla diam mauris, consectetur et lorem ac, malesuada euismod elit. Curabitur a velit efficitur elit imperdiet accumsan. Duis id justo eu nulla varius tempor. Aliquam id elit dapibus, varius magna a, blandit tellus. Mauris bibendum efficitur mi, et vehicula neque tincidunt sed.\n" +
+fun getDescription() =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare velit non mauris elementum, at luctus libero pulvinar. Mauris ac sapien lacus. Nam posuere consectetur mattis. Donec imperdiet, sem lacinia congue ultrices, ligula turpis sodales urna, eget feugiat tortor lacus et est. Phasellus sit amet ultricies odio. Maecenas finibus lorem sit amet orci euismod tempus. Maecenas ornare augue vel sem fermentum vestibulum. Quisque efficitur velit non erat commodo dapibus. Pellentesque ac leo id est volutpat posuere eget non urna. Nulla diam mauris, consectetur et lorem ac, malesuada euismod elit. Curabitur a velit efficitur elit imperdiet accumsan. Duis id justo eu nulla varius tempor. Aliquam id elit dapibus, varius magna a, blandit tellus. Mauris bibendum efficitur mi, et vehicula neque tincidunt sed.\n" +
         "\n" +
         "Aliquam quis facilisis erat. Quisque convallis nunc mattis euismod semper. Nulla ac nunc id felis fringilla volutpat ac ut nisl. Fusce tristique tellus ac finibus accumsan. Praesent pretium faucibus arcu, nec tincidunt metus cursus at. Praesent sem quam, aliquam et tellus scelerisque, sodales sollicitudin ligula. Aenean vel purus interdum, porta odio id, viverra justo. Aliquam auctor gravida lacus sit amet imperdiet. Sed tempor, odio quis varius pretium, magna odio cursus metus, non lacinia nulla turpis in augue.\n" +
         "\nAenean maximus tincidunt tortor, in aliquam augue. Nam ultricies elit eu gravida vehicula. In a imperdiet erat. Cras sit amet tristique erat, ac congue libero. Sed auctor molestie ipsum, vitae euismod nibh vulputate sed. Sed auctor pulvinar dolor. Sed eget gravida magna, eget lacinia sapien. Nunc egestas suscipit auctor.\n" +

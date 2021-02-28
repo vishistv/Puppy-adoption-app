@@ -21,7 +21,11 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -88,18 +92,18 @@ fun LazyColumnItemsScrollableComponent(puppyList: List<Puppy>) {
 
                     Text(
                         puppy.name, style = TextStyle(
-                            color = Color.Black,
-                            fontSize = 16.sp,
-                            textAlign = TextAlign.Center
-                        ), modifier = Modifier.padding(16.dp, 8.dp, 0.dp, 0.dp)
+                        color = Color.Black,
+                        fontSize = 16.sp,
+                        textAlign = TextAlign.Center
+                    ), modifier = Modifier.padding(16.dp, 8.dp, 0.dp, 0.dp)
                     )
 
                     Text(
                         puppy.breed, style = TextStyle(
-                            color = Color.Gray,
-                            fontSize = 12.sp,
-                            textAlign = TextAlign.Center
-                        ), modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 16.dp)
+                        color = Color.Gray,
+                        fontSize = 12.sp,
+                        textAlign = TextAlign.Center
+                    ), modifier = Modifier.padding(16.dp, 0.dp, 0.dp, 16.dp)
                     )
                 }
             }
